@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #2D1E2F, #4E2A4F);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97vw;
+    height: 8vh;
+    border-radius: 4vh;
+    margin-top: 2vh;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 80vw;
+}
+
+.registration button {
+    font-family: "Comfortaa", sans-serif;
+    background: linear-gradient(135deg, #ff4fb3, #ff2f8f);
+    color: white;
+    border: none;
+    padding: 2vh 4vw;
+    font-size: 1.8vh;
+    border-radius: 999px;
+    transition: 0.2s ease;
+}
+
+.registration button:hover {
+    transform: scale(1.05);
+}
+
+.logo {
+    width: 13vh;
+    height: 13vh;
+    transition: transform 0.1s ease-out;
+    transform-origin: center center;
+}
+
+/* ── Мобильная адаптация ── */
+@media (max-width: 768px) {
+    body {
+        overflow-y: auto;
+    }
+
+    .header {
+        width: 94vw;
+        height: 7vh;
+        border-radius: 3vh;
+        margin-top: 1.5vh;
+    }
+
+    .navigation {
+        gap: 20vw;
+        width: 90vw;
+        justify-content: space-between;
+    }
+
+    .registration button {
+        padding: 1.5vh 5vw;
+        font-size: 2vh;
+    }
+
+    .logo {
+        width: 11vh;
+        height: 11vh;
+    }
+}

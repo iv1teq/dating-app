@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block link %}{% endblock %}
+    {% block title %}{% endblock %}
+</head>
+<body>
+    <header class="header">
+        <div >
+
+            <nav>
+                <div class="navigation">
+
+                    
+
+                    <a href="/">
+                        <img src="static/images/logo.svg" alt="" class="logo" id="my-logo">
+                    </a>
+                    <a href="/registration" class="registration">
+                        <button>login</button>
+                    </a>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    {% block scripts %}{% endblock %}
+
+    <script src="{{ url_for('static', filename = 'js/logo.js') }}"></script>
+    
+    <footer>
+        
+    </footer>
+</body>
+</html>

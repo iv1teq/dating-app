@@ -1,0 +1,213 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titel h1{
+    font-family: "Comfortaa", sans-serif;
+    justify-items: center;
+    color: white;
+    font-size: 7vh;
+    text-align: center;
+}
+
+.titel p{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 2.5vh;
+    justify-items: center;
+    text-align: center;
+    color: #C6B1D7;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 7vh;
+    margin-top: 6vh;
+    text-decoration: none;
+}
+
+.buttons button{
+    font-family: "Comfortaa", sans-serif;
+    background: linear-gradient(135deg, #ff4fb3, #ff2f8f);
+    color: white;
+    border: none;
+    padding: 1.2vh 1.5vh;
+    font-size: 1.8vh;
+    border-radius: 999px;
+    transition: 0.2s ease;
+    width: 15vw;
+    height: 6vh;
+}
+
+.buttons button:hover {
+    transform: scale(1.05);
+}
+
+#button2{
+    background: #5F4E61; 
+    border: 0.25vh solid #8E838F;
+}
+
+.cards{
+    perspective: 1000px;
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: row;
+    gap: 5vh;
+}
+
+.card-style{
+    border-radius: 2vh;
+    width: 30vh;
+    height: 26vh;
+    background-color: #4F3951;
+    border: 0.25vh solid #675569;
+    text-align: center;
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+    font-size: 2.5vh;
+    line-height: 1.0;
+    transform-style: preserve-3d;
+    transition: transform 0.08s ease-out;
+    box-shadow: 0 1vh 4vh rgba(0, 0, 0, 0.35);
+}
+
+.card-shine {
+    position: absolute;
+    inset: 0;
+    border-radius: 2vh;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.12) 0%, transparent 65%);
+    z-index: 10;
+}
+
+#pink-text{
+    line-height: 1.3;
+    font-size: 1.5vh;
+    color: #C6B1D7;
+    text-align: center;
+}
+
+#secure{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#photo-card{
+    margin-top: 1vh;
+    width: 3.3vw;
+    height: 7vh;
+}
+
+#photo-card-chat{
+    margin-top: 1.5vh;
+    width: 3vw;
+    height: 6vh;
+}
+
+#card-style-protection{
+    margin-top: 1.5vh;
+    width: 3.3vw;
+    height: 7vh;
+}
+
+/* Анимация появления */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(5vh);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.titel {
+    opacity: 0;
+    animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 0.1s;
+}
+
+.buttons {
+    opacity: 0;
+    animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 0.35s;
+}
+
+.cards {
+    opacity: 0;
+    animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 0.6s;
+}
+
+/* ── Мобильная адаптация ── */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        overflow-y: auto;
+        padding: 2vh 4vw;
+        box-sizing: border-box;
+    }
+
+    .titel h1 {
+        font-size: 5vh;
+    }
+
+    .titel p {
+        font-size: 2vh;
+        padding: 0 4vw;
+    }
+
+    .buttons {
+        gap: 3vh;
+        margin-top: 4vh;
+        flex-wrap: wrap;
+    }
+
+    .buttons button {
+        width: 38vw;
+        height: 6vh;
+        font-size: 2vh;
+        padding: 1vh 2vw;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+    }
+
+    .card-style {
+        width: 80vw;
+        height: auto;
+        min-height: 18vh;
+        font-size: 2.2vh;
+        padding: 2vh 3vw;
+        box-sizing: border-box;
+    }
+
+    #pink-text {
+        font-size: 1.8vh;
+    }
+
+    #photo-card,
+    #card-style-protection {
+        width: 10vw;
+        height: 6vh;
+        margin-top: 1.5vh;
+    }
+
+    #photo-card-chat {
+        width: 9vw;
+        height: 5.5vh;
+        margin-top: 1.5vh;
+    }
+}
