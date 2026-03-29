@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block link %}
+<link rel="stylesheet" href="{{ url_for('main_page.static', filename = 'css/login.css') }}">
+{% endblock %}
+
+{% block titel %} login {% endblock %}
+
+{% block content %}
+<div class="block">
+    <h1>Holly</h1>
+    <p id = 'welcome'>Welcome!</p>
+    <p class = 'basic_text'>Log in into your account</p>
+    <p class = 'basic_text'>Email</p>
+    <input type="text">
+    <p class = 'basic_text'>Password</p>
+    <input type="text">
+    <div class = "checkbox_forgotpass">
+        <input type="checkbox">
+        <p class = 'basic_text'>Remember me</p>
+        <a class = 'links' href="/registration" >Forgot password?</a>
+    </div>
+    <a href="/">
+        <button class = "pink_buttons">Login</button>
+    </a>
+    <p class = 'basic_text'>No account?<a class = 'links' href="/registration">Register</a></p>
+    <p class = 'basic_text'>Or continue with</p>
+    <div class = 'continue_with'>
+        <button class = "buttons">Google</button>
+        <button class = "buttons">Telegram</button>
+    </div>
+
+    
+    
+</div>
+
+
+{% endblock %}

@@ -17,3 +17,10 @@ registration_page = flask.Blueprint(
             static_url_path = "/main_page/static"
         )
 
+login_page = flask.Blueprint(
+            name = "login_page",
+            import_name = __name__,
+            static_folder = "static",
+            template_folder = "templates",
+            static_url_path = "/main_page/static"
+        )

@@ -1,0 +1,76 @@
+
+body{
+    align-items: center;
+    justify-content: center;
+}
+
+.block h1{
+    color: white;
+    font-size: 25px
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #4B394D;
+    height: 80vh;
+    width: 30vw;
+    border-radius: 20px;
+    border: 3px solid #514052;
+    gap: 0px
+}
+#welcome{
+    font-size: 20px;
+    color: #F2F1F2
+
+}
+.basic_text{
+    font-size: 13px;
+    color: #B7A3C7;
+    
+
+}
+.links{
+    text-decoration: none;
+    color: #CB589A
+}
+.checkbox_forgotpass{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px
+
+}
+.checkbox_forgotpass a {
+    margin-left: auto;
+}
+.pink_buttons{
+    font-family: "Comfortaa", sans-serif;
+    background: linear-gradient(135deg, #ff4fb3, #ff2f8f);
+    color: white;
+    border: none;
+    padding: 1.2vh 1.5vh;
+    font-size: 1.8vh;
+    border-radius: 999px;
+    transition: 0.2s ease;
+    width: 20vw;
+    height: 6vh;
+}
+.buttons{
+    font-family: "Comfortaa", sans-serif;
+    background: #614762;
+    color: white;
+    border: 2px solid #715871;
+    padding: 1.2vh 1.5vh;
+    font-size: 1.8vh;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    width: 10vw;
+    height: 6vh;
+}
+.continue_with{
+    gap: 100px;
+}

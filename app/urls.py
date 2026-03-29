@@ -1,4 +1,3 @@
-import flask
 from .settings import app
 from main_page import *
 
@@ -11,3 +10,9 @@ registration_page.add_url_rule(
     rule="/registration",
     view_func = render_registration_page
 )
+
+login_page.add_url_rule(
+    rule = "/login",
+    view_func = render_login_page
+)
+

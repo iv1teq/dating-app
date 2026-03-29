@@ -26,7 +26,7 @@ body {
     gap: 80vw;
 }
 
-.registration button {
+.login button {
     font-family: "Comfortaa", sans-serif;
     background: linear-gradient(135deg, #ff4fb3, #ff2f8f);
     color: white;
@@ -37,7 +37,7 @@ body {
     transition: 0.2s ease;
 }
 
-.registration button:hover {
+.login button:hover {
     transform: scale(1.05);
 }
 
@@ -67,7 +67,7 @@ body {
         justify-content: space-between;
     }
 
-    .registration button {
+    .login button {
         padding: 1.5vh 5vw;
         font-size: 2vh;
     }
