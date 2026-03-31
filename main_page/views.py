@@ -6,3 +6,6 @@ def render_main_page():
 
 def render_registration_page():
     return flask.render_template("registration_page.html")
+
+def render_login_page():
+    return flask.render_template("login_page.html")

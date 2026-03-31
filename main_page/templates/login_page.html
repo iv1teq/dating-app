@@ -1,33 +1,31 @@
 {% extends 'base.html' %}
 
 {% block link %}
-<link rel="stylesheet" href="{{ url_for('main_page.static', filename = 'css/registration.css') }}">
+<link rel="stylesheet" href="{{ url_for('main_page.static', filename = 'css/login.css') }}">
 {% endblock %}
 
-{% block titel %} registration {% endblock %}
+{% block titel %} login {% endblock %}
 
 {% block content %}
 <div class="block">
     <div class="regis-text">
         <h1>Holly</h1>
         <p id='welcome'>Welcome!</p>
-        <p class = 'basic_text'>Register for an account</p>
+        <p class = 'basic_text'>Login to your account</p>
     </div>
     <div class = 'input_text'>
         <p class = 'basic_text'>Email</p>
         <input type="text" class = 'input'>
         <p class = 'basic_text'>Password</p>
         <input type="text" class = 'input'>
-        <p class = 'basic_text'>Password confirmation</p>
-        <input type="text" class = 'input'>
     </div>
     <div>
         <a href="/">
-            <button class = "pink_buttons">Register</button>
+            <button class = "pink_buttons">Login</button>
         </a>
     </div>
     <div class="text-ac">
-        <p>Already have an account? <a href="/login" class = "pink_text">Sign in</a></p>
+        <p>No account? <a href="/registration" class = "pink_text">Register</a></p>
     </div>
     <div class="text-acc">
         <hr><p>Or continue with</p><hr>
