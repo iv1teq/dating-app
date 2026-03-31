@@ -1,9 +1,205 @@
-
 body{
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.titel h1{
+h1{
+    margin: 0;
+    margin-bottom: 5vh;
+}
+p{
+    margin: 0;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #4B394D;
+    height: 80vh;
+    width: 25vw;
+    border-radius: 20px;
+    border: 3px solid #514052;
+    gap: 3vh;
+
+    /* === АНИМАЦИЯ: открытие с центра === */
+    transform: scale(0);
+    opacity: 0;
+    animation: blockOpen 0.55s cubic-bezier(0.34, 1.45, 0.64, 1) forwards;
+}
+
+@keyframes blockOpen {
+    0%   { transform: scale(0); opacity: 0; }
+    60%  { opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* === АНИМАЦИЯ: появление содержимого === */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.regis-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: white;
+    font-size: 30px;
+    margin: 0;
+
+    opacity: 0;
+    animation: fadeUp 0.4s ease 0.35s forwards;
+}
+
+.input_text{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+
+    opacity: 0;
+    animation: fadeUp 0.4s ease 0.45s forwards;
+}
+
+.input{
+    width: 20vw;
+    height: 4vh;
+    background: #5B455C;
+    border-radius: 5px;
+    border: 2px solid #685469;
+    color: white;
+    outline: none;
+}
+
+.basic_text{
+    font-size: 25px;
+    color: #B7A3C7;
+}
+
+.pink_buttons{
+    font-family: "Comfortaa", sans-serif;
+    background: linear-gradient(135deg, #ff4fb3, #ff2f8f);
+    color: white;
+    border: none;
+    padding: 1.2vh 1.5vh;
+    font-size: 1.8vh;
+    border-radius: 999px;
+    transition: 0.2s ease;
+    width: 20vw;
+    height: 6vh;
+    cursor: pointer;
+
+    opacity: 0;
+    animation: fadeUp 0.4s ease 0.55s forwards;
+}
+.pink_buttons:hover {
+    filter: brightness(1.15);
+    box-shadow: 0 4px 18px #ff2f8f55;
+}
+.text-ac{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    color: #ffffff;
+    width: 100%;
+
+    opacity: 0;
+    animation: fadeUp 0.4s ease 0.62s forwards;
+}
+
+.text-acc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    color: #ffffff;
+    width: 100%;
+    gap: 7px;
+
+    opacity: 0;
+    animation: fadeUp 0.4s ease 0.62s forwards;
+}
+.text-acc hr{
+    flex: 1;
+    border: none;
+    height: 1px;
+    background-color: #ffffff77;
+}
+
+.pink_text{
+    color: #ff2f8f;
+}
+
+.buttons{
+    font-family: "Comfortaa", sans-serif;
+    background: #614762;
+    color: white;
+    border: 2px solid #715871;
+    padding: 1.2vh 1.5vh;
+    font-size: 1.8vh;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    width: 10vw;
+    height: 4vh;
+}
+.buttons:hover {
+    transform: scale(1.05);
+}
+.continue_with{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+
+    opacity: 0;
+    animation: fadeUp 0.4s ease 0.7s forwards;
+}
+
+
+@media (max-height: 820px) {
+    p{
+        margin: 0;
+        font-size: 10px;
+    }
+    h1{
+        margin: 0;
+        margin-bottom: 2vh;
+        font-size: 24px;
+    }
+    #welcome{
+        font-size: 20px;
+    }
+    .block{
+        width: 30vw;
+    }
+    .input{
+        width: 25vw;
+    }
+    .basic_text{
+        font-size: 16px;
+    }
+    .pink_buttons{
+        width: 25vw;
+    }
+    .continue_with{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+    .buttons{
+        height: 5vh;
+        width: 10vw;
+    }
+    .text-ac p{
+        font-size: 16px;
+    }
+    .text-acc p{
+        font-size: 16px;
+    }
+    
 }

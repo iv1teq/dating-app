@@ -7,8 +7,39 @@
 {% block titel %} registration {% endblock %}
 
 {% block content %}
-<div class="titel">
-    <h1>Registration_page</h1>
+<div class="block">
+    <div class="regis-text">
+        <h1>Holly</h1>
+        <p id='welcome'>Welcome!</p>
+        <p class = 'basic_text'>Register for an account</p>
+    </div>
+    <div class = 'input_text'>
+        <p class = 'basic_text'>Email</p>
+        <input type="text" class = 'input'>
+        <p class = 'basic_text'>Password</p>
+        <input type="text" class = 'input'>
+        <p class = 'basic_text'>Password confirmation</p>
+        <input type="text" class = 'input'>
+    </div>
+    <div>
+        <a href="/">
+            <button class = "pink_buttons">Register</button>
+        </a>
+    </div>
+    <div class="text-ac">
+        <p>Already have an account? <a href="/login" class = "pink_text">Sign in</a></p>
+    </div>
+    <div class="text-acc">
+        <hr><p>Or continue with</p><hr>
+    </div>
+    <div class = 'continue_with'>
+        <div>
+            <a href=""> <button class = "buttons">Google</button> </a>
+        </div>
+        <div>
+            <a href=""> <button class = "buttons">Telegram</button> </a>
+        </div>
+    </div>
 </div>
 
 

@@ -8,30 +8,36 @@
 
 {% block content %}
 <div class="block">
-    <h1>Holly</h1>
-    <p id = 'welcome'>Welcome!</p>
-    <p class = 'basic_text'>Log in into your account</p>
-    <p class = 'basic_text'>Email</p>
-    <input type="text">
-    <p class = 'basic_text'>Password</p>
-    <input type="text">
-    <div class = "checkbox_forgotpass">
-        <input type="checkbox">
-        <p class = 'basic_text'>Remember me</p>
-        <a class = 'links' href="/registration" >Forgot password?</a>
+    <div class="regis-text">
+        <h1>Holly</h1>
+        <p id='welcome'>Welcome!</p>
+        <p class = 'basic_text'>Login to your account</p>
     </div>
-    <a href="/">
-        <button class = "pink_buttons">Login</button>
-    </a>
-    <p class = 'basic_text'>No account?<a class = 'links' href="/registration">Register</a></p>
-    <p class = 'basic_text'>Or continue with</p>
+    <div class = 'input_text'>
+        <p class = 'basic_text'>Email</p>
+        <input type="text" class = 'input'>
+        <p class = 'basic_text'>Password</p>
+        <input type="text" class = 'input'>
+    </div>
+    <div>
+        <a href="/">
+            <button class = "pink_buttons">Login</button>
+        </a>
+    </div>
+    <div class="text-ac">
+        <p>No account? <a href="/registration" class = "pink_text">Register</a></p>
+    </div>
+    <div class="text-acc">
+        <hr><p>Or continue with</p><hr>
+    </div>
     <div class = 'continue_with'>
-        <button class = "buttons">Google</button>
-        <button class = "buttons">Telegram</button>
+        <div>
+            <a href=""> <button class = "buttons">Google</button> </a>
+        </div>
+        <div>
+            <a href=""> <button class = "buttons">Telegram</button> </a>
+        </div>
     </div>
-
-    
-    
 </div>
 
 
